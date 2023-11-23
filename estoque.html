@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .inventory-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .inventory-container h2 {
+      text-align: center;
+    }
+
+    .inventory-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-group button {
+      background-color: #4c65af;;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #procurar {
+      margin-bottom: 15px;
+      align-items: center;
+      text-align: center;
+
+    }
+
+    #procurar label {
+      font-weight: bold;
+      margin-bottom: 8px;
+      display: block;
+      
+    }
+
+    #procurar input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      
+    }
+
+    #procurar button {
+      background-color: #4c65af;;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+   
+    }
+
+    .produto {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      border: none;
+      border: 1px solid #000;
+      margin-top: 5px;
+      padding: 10px;
+    }
+
+    .texto {
+
+      margin-left: 50px;
+      
+    }
+
+    .button {
+
+     margin-left: 15px;
+     cursor: pointer;
+     background-color: #4c65af;;
+      color: #fff;
+     padding: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      
+
+    }
+
+    .la {
+
+      margin-right: 5px;
+    }
+
+  </style>
+  <title>Estoque</title>
+</head>
+<body>
+
+<div class="inventory-container">
+  <h2>Estoque</h2>
+  <form class="inventory-form">
+    <div class="form-group">
+      <label for="product-name">Nome do Produto:</label>
+      <input type="text" id="produto" name="produto" placeholder="Digite o nome do produto">
+    </div>
+    <div class="form-group">
+      <label for="quantity">Código do Produto:</label>
+      <input type="number" id="codigo" name="codigo" placeholder="Digite o código do produto">
+    </div>
+    <div id="procurar">
+      <button type="button">Procurar Produto </button>
+      <button type="button" onclick="goToHome()">Voltar para Tela Inicial</button>
+    </div>
+
+    <div class="produto">
+      <label class="la"> Produto: </label> 
+      <input type="text" id="produ" name="produto" size="13"  value="Nome do Produto 1" readonly/>
+      <button class="button" type="button"> Atualizar </button>
+      <button  class="button" type="button"> Excluir </button> 
+    </div>
+    
+    <div class="produto">
+      <label class="la"> Produto: </label> 
+      <input type="text" id="produ" name="produto" size="13"  value="Nome do Produto 2" readonly/>
+      <button class="button" type="button"> Atualizar </button>
+      <button  class="button" type="button"> Excluir </button> 
+    </div>
+  </form>
+
+  
+
+</div>
+
+<script>
+
+
+  function goToHome() {
+    // Redirecionar para a página inicial
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html>

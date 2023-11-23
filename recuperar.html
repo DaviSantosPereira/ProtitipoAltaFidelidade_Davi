@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .recovery-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .recovery-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .recovery-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-group button {
+      background-color: #4c65af;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .back-button {
+      background-color: #ccc;
+      color: #000;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+  <title>Recupera Senha</title>
+</head>
+<body>
+
+<div class="recovery-container">
+  <h2>Recuperação de Senha</h2>
+  <p>Insira seu endereço de e-mail para recuperar a senha:</p>
+  <form class="recovery-form">
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="mail" name="mail" placeholder="Digite seu endereço de e-mail" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Recuperar Senha</button>
+      <button class="back-button" onclick="goToLoginPage()">Voltar para Login</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  function goToLoginPage() {
+    // Substitua window.location.href pela URL real da sua página de login
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>
